@@ -206,7 +206,7 @@ const NavBar = () => {
             Locations
           </LocationLink>
           <MobileDropdownContent isOpen={isMobileDropdownOpen}>
-            <NavLink to="/sheffield-main">Sheffield's Collision Center'</NavLink>
+            <NavLink to="/sheffield-main">Sheffield's Collision Center</NavLink>
             <NavLink to="/take-5">Take 5</NavLink>
           </MobileDropdownContent>
         </MobileDropdownContainer>
