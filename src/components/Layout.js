@@ -1,5 +1,5 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import { Helmet } from 'react-helmet';
@@ -26,8 +26,21 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// This new container will wrap your entire site
+const SiteContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+`;
+
+// We'll replace the <main> tag with this styled version
+const MainContent = styled.main`
+  flex: 1; /* This crucial line makes the content area grow to fill all available space */
+`;
+
+
 const Layout = ({ children }) => (
-  <>
+  <SiteContainer>
     <Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -38,9 +51,9 @@ const Layout = ({ children }) => (
     </Helmet>
     <GlobalStyle />
     <NavBar />
-    <main>{children}</main>
+    <MainContent>{children}</MainContent>
     <Footer />
-  </>
+  </SiteContainer>
 );
 
 export default Layout;

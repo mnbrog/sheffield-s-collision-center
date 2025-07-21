@@ -125,7 +125,7 @@ const MobileNavWrapper = styled.div`
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 115px;
     left: 0;
     width: 100%;
     background: var(--white);
