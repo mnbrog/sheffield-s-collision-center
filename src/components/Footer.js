@@ -47,7 +47,7 @@ const Footer = () => (
       <ContactLink href="mailto:scc1655@gmail.com">Email Us</ContactLink>
     </ContactContainer>
     <Copyright>
-      © {new Date().getFullYear()} Sheffield Collision Center. All rights reserved.
+      © {new Date().getFullYear()} Sheffield's Collision Center. All rights reserved.
     </Copyright>
   </Foot>
 );
