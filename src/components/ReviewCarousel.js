@@ -4,16 +4,21 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   overflow-x: auto;
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--light-grey);
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 `;
 
 const Card = styled.div`
-  min-width: 250px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem;
+  min-width: 300px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
 `;
 
 const ReviewCarousel = ({ reviews }) => (

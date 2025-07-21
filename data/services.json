@@ -1,5 +1,22 @@
 [
-  {"title": "Paint Repair", "description": "High-quality color matching and repainting."},
-  {"title": "Frame Straightening", "description": "Restore your vehicle's structural integrity."},
-  {"title": "Dent Removal", "description": "Paintless dent repair for minor damage."}
+  {
+    "title": "Vehicle Customization",
+    "description": "All Collision Repairs. Our Collision center is staffed by knowledgeable, hardworking employees who work hard to give the customer the very best. As a team we evaluate the vehicle damage and organize what repairs need to be made for the benefit of the customer."
+  },
+  {
+    "title": "Paintless Dent Repair",
+    "description": "Paintless Dent Removal utilizes specialized tools and techniques to remove dents. This technique is superior to others because it is cheaper and saves time compared to traditional body repair methods."
+  },
+  {
+    "title": "Hail Dent Removal",
+    "description": "Hail can cause destructive damage to your vehicle, including dents, scratches, and broken windows. Here at Sheffield's, we can help you with the destruction hail can cause."
+  },
+  {
+    "title": "Paint Jobs",
+    "description": "Sheffield Collision Center also offers a variety of paint jobs to help keep your vehicle's appearance in tip-top shape. We offer the highest quality customer service and will treat your automobile as if it were our own."
+  },
+  {
+    "title": "Mechanic Services",
+    "description": "We provide comprehensive mechanic services to address any underlying issues and ensure your vehicle is in perfect working order after a collision."
+  }
 ]

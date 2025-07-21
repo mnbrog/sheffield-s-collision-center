@@ -3,16 +3,22 @@ import styled from 'styled-components';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Card = styled.div`
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
   text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 const Title = styled.h3`
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
+  color: var(--primary-color);
 `;
 
 const ServiceCard = ({ image, title, description }) => (

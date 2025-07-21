@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Foot = styled.footer`
-  background: #f5f5f5;
+  background: var(--dark-grey);
+  color: var(--light-grey);
   padding: 2rem;
   text-align: center;
   font-size: 0.9rem;
@@ -10,7 +11,7 @@ const Foot = styled.footer`
 
 const Footer = () => (
   <Foot>
-    &copy; 2025 Sheffield Collision Center. All rights reserved.
+    &copy; {new Date().getFullYear()} Sheffield Collision Center. All rights reserved.
   </Foot>
 );
 
