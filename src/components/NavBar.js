@@ -40,6 +40,7 @@ const NavLinks = styled.nav`
 const NavLink = styled(Link)`
   color: var(--dark-grey);
   text-decoration: none;
+  font-weight: 600; /* Added for semi-bold text */
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -99,6 +100,7 @@ const DropdownLink = styled(NavLink)`
 const LocationLink = styled.div`
   color: var(--dark-grey);
   text-decoration: none;
+  font-weight: 600; /* Added for semi-bold text */
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
@@ -186,7 +188,7 @@ const NavBar = () => {
         <Dropdown>
           <LocationLink>Locations</LocationLink>
           <DropdownContent>
-            <DropdownLink to="/sheffield-main">Sheffield Main</DropdownLink>
+            <DropdownLink to="/sheffield-main">Sheffield's Collision Center</DropdownLink>
             <DropdownLink to="/take-5">Take 5</DropdownLink>
           </DropdownContent>
         </Dropdown>
@@ -204,7 +206,7 @@ const NavBar = () => {
             Locations
           </LocationLink>
           <MobileDropdownContent isOpen={isMobileDropdownOpen}>
-            <NavLink to="/sheffield-main">Sheffield Main</NavLink>
+            <NavLink to="/sheffield-main">Sheffield's Collision Center'</NavLink>
             <NavLink to="/take-5">Take 5</NavLink>
           </MobileDropdownContent>
         </MobileDropdownContainer>

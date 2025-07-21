@@ -35,9 +35,12 @@ const AboutPage = () => (
     <SEO title="About Us" description="Learn about Sheffield Collision Center" />
     <AboutWrapper>
       <Section>
-        <SectionTitle>About Sheffield's Collision Center</SectionTitle>
+        <SectionTitle>Who We Are</SectionTitle>
         <p>
-          At Sheffield's Collision Center, we bring over 30 years of experience in auto body repair, led by owner Thurston Sheffield. Our skilled team is dedicated to delivering top-notch service with precision and care. Whether it's a small fender-bender or major collision damage, we’re equipped to handle it all. Trust us to get your vehicle back to its best, quickly and efficiently.
+          Sheffield's Collision Center was founded in 2019. We set out to provide the finest auto servicing shop in the Columbus, Georgia area. We stay at the forefront of the latest technology while retaining our knowledge of older classic cars. Whether your vehicle is old or new, we have the finest technicians standing by to repair any problem you may have.
+        </p>
+        <p>
+          We understand how important your car is to you. We’ve built a strong foundation of knowledge through hands on training. It is our standard for each employee to have a vast knowledge to do the best work for your vehicle. Our reputation is crucial. Leave your car with pros who really care.
         </p>
       </Section>
 
@@ -46,7 +49,7 @@ const AboutPage = () => (
         <OwnerCard>
           <h3>Thurston Sheffield</h3>
           <p>
-            Thurston Sheffield is the owner of Sheffield's Collision Center. He started his career in car repair at the age of 19 and has a background in insurance adjusting. He knows the value of hard work. Although Thurston has been doing this for 30 years, he feels like there is always more to change and more to learn. Leave your car with pros who really care.
+            Thurston Sheffield, owner of Sheffield's Collision Center, began his career in auto repair at just 19 years old and brings a wealth of knowledge from his background in insurance adjusting. With 30 years in the industry, Thurston understands the value of hard work and continuous improvement. While he's seen it all, he remains committed to learning and evolving. His experience has shaped his deep understanding of what it takes to keep customers happy and satisfied.
           </p>
         </OwnerCard>
       </Section>

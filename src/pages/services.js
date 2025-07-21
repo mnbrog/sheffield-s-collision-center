@@ -54,10 +54,10 @@ const ServicesPage = () => (
         ))}
       </Grid>
       
-      <InfoSection>
+      {/* <InfoSection>
         <h2></h2>
         <p></p>
-      </InfoSection>
+      </InfoSection> */}
     </ServicesWrapper>
   </Layout>
 );

@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'Inter', 'Open Sans', sans-serif;
+    font-family: 'Quicksand', 'Inter', 'Open Sans', sans-serif;
     background: var(--white);
     color: var(--dark-grey);
   }
@@ -30,9 +30,9 @@ const Layout = ({ children }) => (
   <>
     <Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
         rel="stylesheet"
       />
     </Helmet>

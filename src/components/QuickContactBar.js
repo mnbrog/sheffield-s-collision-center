@@ -11,7 +11,7 @@ const Bar = styled.div`
 `;
 
 const Item = styled.a`
-  color: teal;
+  color: #045990;
   text-decoration: none;
   font-weight: 600;
 `;
@@ -19,8 +19,8 @@ const Item = styled.a`
 const QuickContactBar = () => (
   <Bar>
     <Item href="https://maps.google.com/?q=Sheffield+Collision+Center">Map</Item>
-    <Item href="tel:+1234567890">(123) 456-7890</Item>
-    <Item href="mailto:info@sheffieldcollision.com">Email Us</Item>
+    <Item href="tel:+17069400120">(706) 940-0120</Item>
+    <Item href="mailto:scc1655@gmail.com">Email Us</Item>
   </Bar>
 );
 

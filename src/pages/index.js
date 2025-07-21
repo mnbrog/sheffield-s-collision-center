@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" description="Collision repair you can trust" />
     <Hero />
     <ReviewCarousel reviews={reviews} />
-    <QuickContactBar />
+    
   </Layout>
 );
 

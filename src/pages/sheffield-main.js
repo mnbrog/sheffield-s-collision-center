@@ -12,7 +12,7 @@ const PageWrapper = styled.div`
 `;
 
 const SheffieldMainPage = () => {
-  const sheffieldMainLocation = locations.find(loc => loc.name === "Sheffield Main");
+  const sheffieldMainLocation = locations.find(loc => loc.name === "Sheffield's Collision Center");
 
   return (
     <Layout>
