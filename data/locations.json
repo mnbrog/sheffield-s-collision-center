@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sheffield Main",
+    "address": "123 Main St, Sheffield, AL",
+    "phone": "(123) 456-7890",
+    "hours": "Mon-Fri 8am-5pm"
+  },
+  {
+    "name": "Take 5 Oil Change",
+    "address": "456 Elm St, Sheffield, AL",
+    "phone": "(123) 111-2222",
+    "hours": "Mon-Sat 8am-6pm"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "sheffield-s-collision-center",
+  "private": true,
+  "description": "Sheffield Collision Center website built with Gatsby",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.8",
+    "gatsby-plugin-styled-components": "^5.12.0",
+    "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-transformer-sharp": "^5.12.0",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-plugin-react-helmet": "^5.12.0",
+    "react-helmet": "^6.1.0"
+  }
+}
