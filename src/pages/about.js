@@ -35,9 +35,9 @@ const AboutPage = () => (
     <SEO title="About Us" description="Learn about Sheffield Collision Center" />
     <AboutWrapper>
       <Section>
-        <SectionTitle>Who We Are</SectionTitle>
+        <SectionTitle>About Sheffield's Collision Center</SectionTitle>
         <p>
-          Sheffield's Collision Center was founded in 2019. We set out to provide the finest auto servicing shop in the Columbus, Georgia area. We stay at the forefront of the latest technology while retaining our knowledge of older classic cars. Whether your vehicle is old or new, we have the finest technicians standing by to repair any problem you may have.
+          At Sheffield's Collision Center, we bring over 30 years of experience in auto body repair, led by owner Thurston Sheffield. Our skilled team is dedicated to delivering top-notch service with precision and care. Whether it's a small fender-bender or major collision damage, we’re equipped to handle it all. Trust us to get your vehicle back to its best, quickly and efficiently.
         </p>
       </Section>
 

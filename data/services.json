@@ -1,22 +1,26 @@
 [
-  {
-    "title": "Vehicle Customization",
-    "description": "All Collision Repairs. Our Collision center is staffed by knowledgeable, hardworking employees who work hard to give the customer the very best. As a team we evaluate the vehicle damage and organize what repairs need to be made for the benefit of the customer."
-  },
-  {
-    "title": "Paintless Dent Repair",
-    "description": "Paintless Dent Removal utilizes specialized tools and techniques to remove dents. This technique is superior to others because it is cheaper and saves time compared to traditional body repair methods."
-  },
-  {
-    "title": "Hail Dent Removal",
-    "description": "Hail can cause destructive damage to your vehicle, including dents, scratches, and broken windows. Here at Sheffield's, we can help you with the destruction hail can cause."
-  },
-  {
-    "title": "Paint Jobs",
-    "description": "Sheffield Collision Center also offers a variety of paint jobs to help keep your vehicle's appearance in tip-top shape. We offer the highest quality customer service and will treat your automobile as if it were our own."
-  },
-  {
-    "title": "Mechanic Services",
-    "description": "We provide comprehensive mechanic services to address any underlying issues and ensure your vehicle is in perfect working order after a collision."
-  }
+   {
+            "title": "Collision Repair",
+            "description": "From frame straightening to paintless dent repair, we handle it all with precision."
+          },
+          {
+            "title": "Insurance Claim Assistance",
+            "description": "Present us with your original insurance appraisal, and we’ll take over the entire claim negotiation process to ensure you get the coverage you deserve."
+          },
+          {
+            "title": "Lifetime Guarantee",
+            "description": "All of our collision repairs come with a written lifetime guarantee for as long as you own your vehicle."
+          },
+          {
+            "title": "Fast Scheduling",
+            "description": "Our streamlined scheduling process reduces repair time, so you’re back on the road faster."
+          },
+          {
+            "title": "Pickup & Delivery",
+            "description": "We offer convenient pickup and delivery services in the Columbus/Phenix City area, making your experience hassle-free."
+          },
+          {
+            "title": "Rental Assistance",
+            "description": "Need a rental car? We’ll provide transportation to rental companies to ensure you're not left without a vehicle."
+          }
 ]

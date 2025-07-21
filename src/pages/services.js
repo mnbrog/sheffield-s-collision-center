@@ -41,7 +41,7 @@ const ServicesPage = () => (
     <ServicesWrapper>
       <PageHeader>
         <PageTitle>Repair Services for ALL Makes & Models</PageTitle>
-        <p>We negotiate all insurance claims for you. Present us with the original insurance company appraisal and we will take over the process from there.</p>
+        <p>At Sheffield's Collision Center, we offer top-tier auto body repair services for all makes and models. Whether it's a minor dent or major collision damage, we’ve got the experience and expertise to get your vehicle back on the road in no time.</p>
       </PageHeader>
       
       <Grid>
@@ -55,8 +55,8 @@ const ServicesPage = () => (
       </Grid>
       
       <InfoSection>
-        <h2>Lifetime Guarantee</h2>
-        <p>Our collision repair comes with a written lifetime guarantee, warranted for as long as you own your vehicle.</p>
+        <h2></h2>
+        <p></p>
       </InfoSection>
     </ServicesWrapper>
   </Layout>
