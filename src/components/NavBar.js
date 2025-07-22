@@ -158,7 +158,7 @@ const NavBar = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "SccLogo.png" }) {
+      logo: file(relativePath: { eq: "NEW SCC LOGO (2).png" }) {
         childImageSharp {
           gatsbyImageData(width: 180, placeholder: BLURRED, layout: CONSTRAINED)
         }
