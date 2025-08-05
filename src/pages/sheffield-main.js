@@ -57,7 +57,7 @@ const SheffieldMainPage = () => {
   // Get the location image using Gatsby image query
   const data = useStaticQuery(graphql`
     query {
-      locationHero: file(relativePath: { eq: "kgp-028.jpg" }) {
+      locationHero: file(relativePath: { eq: "kgp-008.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
