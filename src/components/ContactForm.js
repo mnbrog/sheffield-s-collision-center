@@ -37,7 +37,7 @@ const Button = styled.button`
 `;
 
 const ContactForm = () => (
-  <Form name="contact" method="POST" data-netlify="true">
+  <Form name="contact" method="POST" netlify>
     <input type="hidden" name="form-name" value="contact" />
     <Input type="text" name="name" placeholder="Name" required />
     <Input type="email" name="email" placeholder="Email" required />
