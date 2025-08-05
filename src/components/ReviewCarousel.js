@@ -55,9 +55,9 @@ const ReviewCarousel = ({ reviews }) => (
       <Card key={idx}>
         <div>
           <p>"{rev.text}"</p>
-          <strong>- {rev.author}</strong>
         </div>
         <StarsAndLogo>
+          <strong>- {rev.author}</strong>
           <Stars>★★★★★</Stars>
           <Logo src={logo} alt="Brand logo" />
         </StarsAndLogo>
