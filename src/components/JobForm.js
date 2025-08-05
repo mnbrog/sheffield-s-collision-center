@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-// Assumes jobs.json is in a 'data' folder sibling to the 'components' folder
-import jobs from '..//../data/jobs.json';
+// Corrected import path for a standard project structure
+import jobs from '../../data/jobs.json';
 
 // --- Styled Components --- //
 const Form = styled.form`
@@ -83,16 +83,17 @@ const FormStatus = styled.p`
 
 // --- React Component --- //
 const JobForm = () => {
-  // State for form fields
+  // State for form fields - Added 'phone'
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     selectedJob: '',
   });
   const [resume, setResume] = useState(null);
   const [status, setStatus] = useState('');
 
-  // Handler for text inputs and select dropdown
+  // Generic handler works for the new phone field as well
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -120,6 +121,7 @@ const JobForm = () => {
     data.append('form-name', 'jobApplication');
     data.append('name', formData.name);
     data.append('email', formData.email);
+    data.append('phone', formData.phone); // Append phone number to submission data
     data.append('selectedJob', formData.selectedJob);
     data.append('resume', resume);
 
@@ -127,7 +129,8 @@ const JobForm = () => {
       const response = await fetch('/', { method: 'POST', body: data });
       if (response.ok) {
         setStatus('Application submitted successfully! Thank you.');
-        setFormData({ name: '', email: '', selectedJob: '' });
+        // Reset the form state, including the new phone field
+        setFormData({ name: '', email: '', phone: '', selectedJob: '' });
         setResume(null);
         document.getElementById('resume-input').value = '';
       } else {
@@ -174,6 +177,15 @@ const JobForm = () => {
         name="email"
         placeholder="Email"
         value={formData.email}
+        onChange={handleChange}
+        required
+      />
+      {/* New Phone Number Field */}
+      <Input
+        type="tel"
+        name="phone"
+        placeholder="Phone"
+        value={formData.phone}
         onChange={handleChange}
         required
       />

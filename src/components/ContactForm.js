@@ -91,17 +91,18 @@ const FormStatus = styled.p`
 
 // --- React Component --- //
 const ContactForm = () => {
-  // Add 'selectedService' to the form's state
+  // Add 'phone' to the form's state
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     selectedService: '',
     message: '',
   });
 
   const [status, setStatus] = useState('');
 
-  // This single handler works for inputs, textareas, and the new select dropdown
+  // This single handler works for all inputs, including the new phone field
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -114,7 +115,7 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus('Sending...');
 
-    // The 'selectedService' field is automatically included from the form's state
+    // The 'phone' and 'selectedService' fields are automatically included
     const encodedData = new URLSearchParams({
       'form-name': 'contact',
       ...formData,
@@ -129,8 +130,8 @@ const ContactForm = () => {
 
       if (response.ok) {
         setStatus('Thank you! Your message has been sent.');
-        // Clear all fields, including the new dropdown
-        setFormData({ name: '', email: '', selectedService: '', message: '' });
+        // Clear all fields on successful submission
+        setFormData({ name: '', email: '', phone: '', selectedService: '', message: '' });
       } else {
         throw new Error('Network response was not ok.');
       }
@@ -168,8 +169,17 @@ const ContactForm = () => {
         required
         disabled={isSubmitting}
       />
+      {/* New Phone Number Field */}
+      <Input
+        type="tel"
+        name="phone"
+        placeholder="Phone"
+        value={formData.phone}
+        onChange={handleChange}
+        required
+        disabled={isSubmitting}
+      />
 
-      {/* The new Services dropdown */}
       <Select
         name="selectedService"
         value={formData.selectedService}
