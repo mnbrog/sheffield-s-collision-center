@@ -10,40 +10,46 @@ import milestones from '../../data/milestones.json';
 
 const HeroContainer = styled.div`
   display: grid;
+  grid-template-areas: "hero";
+  width: 100vw;
+  height: 50vh;
   position: relative;
-  align-items: center;
-  justify-items: center;
+  overflow: hidden;
 `;
 
 const HeroImage = styled(GatsbyImage)`
-  grid-area: 1/1;
+  grid-area: hero;
   width: 100%;
-  max-height: 400px;
+  height: 100%;
+  object-fit: cover;
+  background-color: black;
 `;
 
 const HeroContent = styled.div`
-  grid-area: 1/1;
-  position: relative;
-  z-index: 2;
-  color: var(--white);
-  text-align: center;
-  padding: 0rem;
+  grid-area: hero;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.25); /* Light black overlay spans entire hero */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
- background: rgba(0, 0, 0, 0.4); <-- This line was removed */
+  text-align: center;
+  color: white;
 `;
 
 const HeroTitle = styled.h1`
-    font-size: 3rem;
-    font-weight: 600;
-    @media (max-width: 768px) {
-        font-size: 2.5rem;
-    }
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
+
 
 const AboutWrapper = styled.div`
   padding: 2rem;
@@ -67,13 +73,19 @@ const OwnerCard = styled.div`
   border-radius: 15px;
   padding: 2rem;
   box-shadow: var(--shadow);
-  text-align: left; /* Aligned text left for better readability */
+  text-align: left;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 `;
+
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "aboutscc.png" }) {
+      heroImage: file(relativePath: { eq: "kgp-037.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
@@ -102,10 +114,12 @@ const AboutPage = () => {
         <Section>
           <SectionTitle>Who We Are</SectionTitle>
           <p>
-            Sheffield's Collision Center was founded in 2019. We set out to provide the finest auto servicing shop in the Columbus, Georgia area. We stay at the forefront of the latest technology while retaining our knowledge of older classic cars. Whether your vehicle is old or new, we have the finest technicians standing by to repair any problem you may have.
+          Sheffield's Collision Center was founded in 2019 with a clear mission: to provide the highest quality auto body repair and customer service in the Columbus, Georgia area. While our shop may be relatively new, our roots in the auto body industry run deep; with over 35 years of combined experience, our team brings a wealth of knowledge, craftsmanship, and passion to every vehicle we service.          </p>
+          <p>
+            We understand how important your vehicle is to your daily life, and we treat every car like it’s our own. Each member of our team undergoes rigorous, hands-on training to meet our high standards of quality. It’s not just about fixing cars; it’s about earning your trust and delivering peace of mind.
           </p>
           <p>
-            We understand how important your car is to you. We’ve built a strong foundation of knowledge through hands on training. It is our standard for each employee to have a vast knowledge to do the best work for your vehicle. Our reputation is crucial. Leave your car with pros who really care.
+            At Sheffield’s, our reputation is everything. We pride ourselves on honest communication, expert workmanship, and a commitment to excellence that shows in every job we complete. Leave your car with professionals who truly care, and who have the experience to prove it.
           </p>
         </Section>
 
@@ -114,15 +128,14 @@ const AboutPage = () => {
           <OwnerCard>
             <h3>Thurston Sheffield</h3>
             <p>
-              Thurston Sheffield, owner of Sheffield's Collision Center, began his career in auto repair at just 19 years old and brings a wealth of knowledge from his background in insurance adjusting. With 30 years in the industry, Thurston understands the value of hard work and continuous improvement. While he's seen it all, he remains committed to learning and evolving. His experience has shaped his deep understanding of what it takes to keep customers happy and satisfied.
+            Thurston Sheffield, owner of Sheffield's Collision Center, began his career in auto repair at just 19 years old. With a strong foundation in both hands-on repair and insurance adjusting, he brings a unique and valuable perspective to the collision repair process. Over the past 35 years, Thurston has built a reputation for integrity, hard work, and a relentless drive for improvement.
+            </p>
+            <p>
+            His background in insurance adjusting allows him to navigate the repair process with efficiency and transparency, always advocating for the best outcome for his customers. While his experience is vast, Thurston remains a lifelong learner, continually adapting to changes in technology and industry standards. His leadership and commitment to excellence are at the core of everything we do at Sheffield’s, ensuring every customer leaves satisfied and confident in the work we've done.
             </p>
           </OwnerCard>
         </Section>
-        
-        <Section>
-          <SectionTitle>Our History</SectionTitle>
-          <Timeline events={milestones} />
-        </Section>
+  
 
       </AboutWrapper>
     </Layout>
