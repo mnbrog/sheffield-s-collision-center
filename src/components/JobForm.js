@@ -29,7 +29,7 @@ const Button = styled.button`
 `;
 
 const JobForm = () => (
-  <Form name="job" method="POST" data-netlify="true" encType="multipart/form-data">
+  <Form name="job" method="POST" encType="multipart/form-data" netlify>
     <input type="hidden" name="form-name" value="job" />
     <Input type="text" name="name" placeholder="Name" required />
     <Input type="email" name="email" placeholder="Email" required />
