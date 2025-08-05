@@ -45,7 +45,7 @@ const SectionTitle = styled.h2`
 const CareersPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "careersSCC.png" }) {
+      heroImage: file(relativePath: { eq: "kgp-087.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH

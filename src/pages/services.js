@@ -74,7 +74,7 @@ const Grid = styled.div`
 const ServicesPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            heroImage: file(relativePath: { eq: "ServicesScc.png" }) {
+            heroImage: file(relativePath: { eq: "kgp-065.jpg" }) {
                 childImageSharp {
                     gatsbyImageData(
                         layout: FULL_WIDTH

@@ -17,10 +17,9 @@ const BgImage = styled(GatsbyImage)`
   object-fit: cover;
 `;
 
-// New: dark overlay layer
 const Overlay = styled.div`
   grid-area: 1/1;
-  background: rgba(0, 0, 0, 0.4); /* adjust opacity here */
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -34,7 +33,7 @@ const HeroContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 2rem; /* Reduced vertical padding from 6rem to 4rem */
+  padding: 2rem;
 `;
 
 const Headline = styled.h1`
@@ -46,6 +45,14 @@ const Headline = styled.h1`
   @media (max-width: 768px) {
     font-size: 2.5rem;
   }
+`;
+
+// New: Button container for side-by-side layout
+const ButtonRow = styled.div`
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const CTA = styled(Link)`
@@ -66,7 +73,7 @@ const CTA = styled(Link)`
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "heromainscc.png" }) {
+      heroImage: file(relativePath: { eq: "kgp-033.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
@@ -86,7 +93,10 @@ const Hero = () => {
       <Overlay />
       <HeroContent>
         <Headline>Collision Repair You Can Trust</Headline>
-        <CTA to="/contact">Get a Free Estimate</CTA>
+        <ButtonRow>
+          <CTA to="/locations">Get Directions</CTA>
+          <CTA to="/contact">Contact Us</CTA>
+        </ButtonRow>
       </HeroContent>
     </Wrapper>
   );

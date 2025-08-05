@@ -188,8 +188,8 @@ const NavBar = () => {
         <Dropdown>
           <LocationLink>Locations</LocationLink>
           <DropdownContent>
-            <DropdownLink to="/sheffield-main">Sheffield's Collision Center</DropdownLink>
-            <DropdownLink to="/take-5">Take 5</DropdownLink>
+            <DropdownLink to="/sheffield-main">Columbus</DropdownLink>
+            <DropdownLink to="/take-5">Midland</DropdownLink>
           </DropdownContent>
         </Dropdown>
         <NavLink to="/careers">Careers</NavLink>
@@ -206,8 +206,8 @@ const NavBar = () => {
             Locations
           </LocationLink>
           <MobileDropdownContent isOpen={isMobileDropdownOpen}>
-            <NavLink to="/sheffield-main">Sheffield's Collision Center</NavLink>
-            <NavLink to="/take-5">Take 5</NavLink>
+            <NavLink to="/sheffield-main">Columbus</NavLink>
+            <NavLink to="/take-5">Midland</NavLink>
           </MobileDropdownContent>
         </MobileDropdownContainer>
         <NavLink to="/careers">Careers</NavLink>

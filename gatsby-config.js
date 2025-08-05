@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Sheffield Collision Center',
     description: 'Collision repair you can trust in Sheffield.',
-    siteUrl: 'https://www.sheffieldcollisioncenter.com',
+    siteUrl: 'https://www.sheffieldscollisioncenter.com',
   },
   plugins: [
     'gatsby-plugin-image',
