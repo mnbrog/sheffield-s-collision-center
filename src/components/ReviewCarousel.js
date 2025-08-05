@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import styled from 'styled-components';
 import logo from '../../images/NEW SCC LOGO (2).png'; // Adjust path if needed
 
@@ -15,34 +15,38 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  min-width: 300px;
-  height: 350px; /* Set a fixed height */
+  /* --- RESPONSIVE CHANGES HERE --- */
+  width: 80vw;           /* On small screens, card is 80% of viewport width */
+  max-width: 300px;      /* On larger screens, it won't exceed 300px */
+  min-height: 350px;     /* Changed from fixed height to allow card to grow */
+  
   background: var(--white);
   border-radius: 15px;
   box-shadow: var(--shadow);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Push footer to bottom */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  /* Add flex-shrink to prevent card from squishing on some devices */
+  flex-shrink: 0;
 `;
 
 const StarsAndLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
 `;
 
 const Stars = styled.div`
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: #f5a623;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 `;
 
 const Logo = styled.img`
-  width: 100px;
+  width: 130px;
 `;
 
 const ReviewCarousel = ({ reviews }) => (

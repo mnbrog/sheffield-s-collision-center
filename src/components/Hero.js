@@ -73,7 +73,7 @@ const CTA = styled(Link)`
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
-      heroImage: file(relativePath: { eq: "kgp-033.jpg" }) {
+      heroImage: file(relativePath: { eq: "kgp-001.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
