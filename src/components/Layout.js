@@ -42,6 +42,17 @@ const MainContent = styled.main`
 const Layout = ({ children }) => (
   <SiteContainer>
     <Helmet>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7N99R0TW1"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X7N99R0TW1');
+      `,
+        }}
+      />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link
